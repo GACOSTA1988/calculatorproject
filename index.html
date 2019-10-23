@@ -10,9 +10,16 @@
 
   <title>Calculator</title>
 </head>
+</div>
 <body>
   <div class="container">
     <h1>Calculator</h1>
+    <br>
+
+    <div class="jumbotron"id="output">
+    </div>
+    <br>
+    <h2>Addition</h2>
     <form id="add">
       <div class="form-group">
         <label for="add1">1st number:</label>
@@ -24,9 +31,45 @@
       </div>
       <button type="submit" class="btn">Add!</button>
     </form>
-    <div id="output">
 
-    </div>
-  </div>
+    <h2>Subtraction</h2>
+    <form id="subtraction">
+
+      <div class="form-group">
+        <label for="sub1">1st number:</label>
+        <input id="sub1" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="sub2">2nd number:</label>
+        <input id="sub2" class="form-control" type="text">
+      </div>
+      <button type="submit" class="btn">subtract!</button>
+    </form>
+
+
+    <h2>Division</h2>
+    <form id="division">
+      <div class="form-group">
+        <label for="div1">1st number:</label>
+        <input id="div1" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="div2">2nd number:</label>
+        <input id="div2" class="form-control" type="text">
+      </div>
+      <button type="submit" class="btn">Divide!</button>
+    </form>
+    <h2>Multiplication</h2>
+    <form id="multiplication">
+      <div class="form-group">
+        <label for="mul1">1st number:</label>
+        <input id="mul1" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="mul2">2nd number:</label>
+        <input id="mul2" class="form-control" type="text">
+      </div>
+      <button type="submit" class="btn">multiply!</button>
+    </form>
 </body>
 </html>
