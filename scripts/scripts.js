@@ -22,10 +22,13 @@ var multiplication = function (number1, number2){
 };
 
 $(document).ready(function() {
-  var number1 = parseInt($("#add1").val());
-  var number2 = parseInt($("#add2").val());
-
-  alert(add(number1, number2));
+  $("form#add").submit(function(event){
+    event.preventDefault();
+    var number1 = parseInt($("#add1").val());
+    var number2 = parseInt($("#add2").val());
+    var result = add(number1, number2);
+    $("#output").text(result);
+  });
 });
 
 
@@ -66,21 +69,21 @@ $(document).ready(function() {
 
 // BMI
 // var bmi = function (weight, height){
-//   // alert(weight * height);
-//   return (weight * 703) / (height * height);
-// }
-//
-// var result = bmi(weight, height);
-// if(isNaN(result)) {
-//   alert("Uh oh, make sure not to type \"lb\" or \"in\" with your measurements, digits only!");
-// } else {
-//   alert("Your BMI is: " + result + ". Refresh the page to calculate again!");
-// }
-//
-// // celsius to Fahrenheit
-// var celsiusPrompt = parseFloat(prompt ("Enter the celsius"));
-// // var fahrenheit = parseFloat ("Enter the Fahrenheit")
-// var celciusToFahrenheit = function (celsius) {
-// return celsiusPrompt * (9/5) + 32;
-// }
-//   alert (celsiusPrompt +' to fahrenheit: '+ celciusToFahrenheit(celsiusPrompt));
+  //   // alert(weight * height);
+  //   return (weight * 703) / (height * height);
+  // }
+  //
+  // var result = bmi(weight, height);
+  // if(isNaN(result)) {
+    //   alert("Uh oh, make sure not to type \"lb\" or \"in\" with your measurements, digits only!");
+    // } else {
+      //   alert("Your BMI is: " + result + ". Refresh the page to calculate again!");
+      // }
+      //
+      // // celsius to Fahrenheit
+      // var celsiusPrompt = parseFloat(prompt ("Enter the celsius"));
+      // // var fahrenheit = parseFloat ("Enter the Fahrenheit")
+      // var celciusToFahrenheit = function (celsius) {
+        // return celsiusPrompt * (9/5) + 32;
+        // }
+        //   alert (celsiusPrompt +' to fahrenheit: '+ celciusToFahrenheit(celsiusPrompt));
