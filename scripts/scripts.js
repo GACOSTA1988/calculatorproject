@@ -35,6 +35,7 @@ $(document).ready(function() {
     var number1 = parseInt($("#sub1").val());
     var number2 = parseInt($("#sub2").val());
     var result = subtraction(number1, number2);
+    result="Your answer is: " + result
     $("#output").text(result);
   });
 
@@ -43,6 +44,7 @@ $(document).ready(function() {
     var number1 = parseInt($("#div1").val());
     var number2 = parseInt($("#div2").val());
     var result = division(number1, number2);
+    result="Your answer is: " + result
     $("#output").text(result);
   });
   $("form#multiplication").submit(function(event){
@@ -50,7 +52,8 @@ $(document).ready(function() {
     var number1 = parseInt($("#mul1").val());
     var number2 = parseInt($("#mul2").val());
     var result = multiplication(number1, number2);
-    $("#output").text(+'Your answer is'+ result);
+    result="Your answer is: " + result
+    $("#output").text(result);
   });
 });
 
